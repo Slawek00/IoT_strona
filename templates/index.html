@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/style.css') }}">
+</head>
+<body>
+    <main>
+            <form class="form-elements" method="post">
+                <h1 class="form-title">
+                    <span>Login</span>
+                    <span>Page</span>
+                </h1>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512">
+                        <path d="M16.043,14H7.957A4.963,4.963,0,0,0,3,18.957V24H21V18.957A4.963,4.963,0,0,0,16.043,14Z"/>
+                        <circle cx="12" cy="6" r="6"/>
+                    </svg>
+                    <input class="form-text" type="text" placeholder="Login" name="user" style="border: {{ solid }} {{ border }} {{ color }}">
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
+                        <g>
+                            <path d="M405.333,179.712v-30.379C405.333,66.859,338.475,0,256,0S106.667,66.859,106.667,149.333v30.379   c-38.826,16.945-63.944,55.259-64,97.621v128C42.737,464.214,90.452,511.93,149.333,512h213.333   c58.881-0.07,106.596-47.786,106.667-106.667v-128C469.278,234.971,444.159,196.657,405.333,179.712z M277.333,362.667   c0,11.782-9.551,21.333-21.333,21.333c-11.782,0-21.333-9.551-21.333-21.333V320c0-11.782,9.551-21.333,21.333-21.333   c11.782,0,21.333,9.551,21.333,21.333V362.667z M362.667,170.667H149.333v-21.333c0-58.91,47.756-106.667,106.667-106.667   s106.667,47.756,106.667,106.667V170.667z"/>
+                        </g>
+                    </svg>
+                <input class="form-text" type="password" placeholder="Password" name="password" style="border: {{ solid }} {{ border }} {{ color }}">
+                </div>
+                <input class="form-button" type="submit" value="Sign In">
+            </form>
+            <img class="shape-background" src="{{ url_for('static', filename='Image/noun-abstract-shape-478750.svg') }}" alt="shape">
+        <p>{{ Error_log }}</p>
+    </main>
+</body>
+</html>
