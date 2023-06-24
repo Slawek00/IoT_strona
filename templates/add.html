@@ -1,0 +1,14 @@
+{% extends "dash.html" %}
+{% block title %} Add employee {% endblock %}
+{% block content %}
+<form class="form-elements" method="POST" action="/new_employee">
+    <div class="form-div">
+        <input type="text" class="form-text" placeholder="First name" name="first_name">
+        <input type="text" class="form-text" placeholder="Last name" name="last_name">
+        <input type="number" class="form-text" placeholder="Phone number" name="phone_number">
+        <input type="text" class="form-text" placeholder="Position" name="position">
+        <input type="text" class="form-text" placeholder="Login" name="login">
+    </div>
+    <input class="form-button" type="submit" value="Add">
+</form>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "dash.html" %}
+{% block title %} Employees {% endblock %}
+{% block content %}
+<div class="scroll-element">
+    <ul>
+      {% for element in data %}
+          <li><p>Nazwisko: {{element.Nazwisko}}, Posada: {{element.Posada}}</p></li>
+      {% endfor %}
+    </ul>
+</div>
+{% endblock %}
